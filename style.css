@@ -1,4 +1,4 @@
-input[type='text'],
+textarea,
 body {
   /* No px! */
   --font-size-min: 18; 
