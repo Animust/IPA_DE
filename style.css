@@ -1,3 +1,7 @@
+input[type='text'],
+body {
+  font-size: 2vw;
+}
 
 #container {
     display: flex;
