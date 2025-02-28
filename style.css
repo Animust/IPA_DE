@@ -1,6 +1,14 @@
 input[type='text'],
 body {
-  font-size: 2vw;
+  /* No px! */
+  --font-size-min: 18; 
+  --font-size-max: 21;
+  --font-view-min: 576;
+  --font-view-max: 1280;
+
+  /* The magic part */
+  font-size: clamp(calc(var(--font-size-min) * 1px), calc((var(--font-size-min) * 1px) + (var(--font-size-max) - var(--font-size-min)) * ((100vw - (var(--font-view-min) * 1px)) / var(--font-view-max))), calc(var(--font-size-max) * 1px) ); 
+  line-height: 1.6em;
 }
 
 #container {
