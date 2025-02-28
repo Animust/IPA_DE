@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title>Word Translator</title>
+    <meta charset="UTF-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="ipatranslater.js"></script>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <style>
+    </style>
+    <div id="main">
+        <div id="container">
+            <input id="btnTranslate" type="button" value="Lautschrift anzeigen [Enter]">
+            <input id="givenText" value="Schreibe hier einen deutschen Text hinein" onkeydown="search(this)" />
+            <div id="parsedText">
+                Ergebnis
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
